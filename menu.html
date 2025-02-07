@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'../buttons/button2A.jpg',/*url*/'../buttons/button2B.jpg',/*url*/'../buttons/button30.jpg',/*url*/'../buttons/button31.jpg',/*url*/'../buttons/button36.jpg',/*url*/'../buttons/button37.jpg',/*url*/'../buttons/button39.jpg',/*url*/'../buttons/button3A.jpg',/*url*/'../buttons/button3C.jpg',/*url*/'../buttons/button3D.jpg',/*url*/'../buttons/button3F.jpg',/*url*/'../buttons/button40.jpg',/*url*/'../buttons/button67.jpg',/*url*/'../buttons/button68.jpg',/*url*/'../buttons/button73.jpg',/*url*/'../buttons/button74.jpg')" style="background-image: url('../images/background.jpg')">
+
+<div class="auto-style1">
+	<a href="nachalo.html" target="main">
+	<img id="img1" alt="Начало" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'../buttons/button2B.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'../buttons/button29.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'../buttons/button2A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'../buttons/button2A.jpg')" src="../buttons/button29.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Начало" --></a><br />
+	<a href="opredelenie.html" target="main">
+	<img id="img2" alt="Определение" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'../buttons/button31.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'../buttons/button2F.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'../buttons/button30.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'../buttons/button30.jpg')" src="../buttons/button2F.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Определение" --></a><br />
+	<a href="predimstva.html" target="main">
+	<img id="img4" alt="Предимства" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'../buttons/button37.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'../buttons/button35.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'../buttons/button36.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'../buttons/button36.jpg')" src="../buttons/button35.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Предимства" --></a><br />
+	<a href="oblasti.html" target="main">
+	<img id="img5" alt="Области" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'../buttons/button3A.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'../buttons/button38.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'../buttons/button39.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'../buttons/button39.jpg')" src="../buttons/button38.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Области" --></a><br />
+	<a href="pravila.html" target="main">
+	<img id="img6" alt="Правила" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'../buttons/button3D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'../buttons/button3B.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'../buttons/button3C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'../buttons/button3C.jpg')" src="../buttons/button3B.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Правила" --></a><br />
+	<a href="epari.html" target="main">
+	<img id="img7" alt="Е-пари" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'../buttons/button40.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'../buttons/button3E.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'../buttons/button3F.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'../buttons/button3F.jpg')" src="../buttons/button3E.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Е-пари" --></a><br />
+	<a href="sistemi.html" target="main">
+	<img id="img8" alt="Системи" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'../buttons/button68.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'../buttons/button66.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'../buttons/button67.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'../buttons/button67.jpg')" src="../buttons/button66.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Системи" --></a><br />
+	<a href="kontakti.html" target="main">
+	<img id="img9" alt="Контакти" height="48" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'../buttons/button74.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'../buttons/button72.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'../buttons/button73.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'../buttons/button73.jpg')" src="../buttons/button72.jpg" style="border: 0" width="240" /><!-- MSComment="ibutton" fp-style="fp-btn: Corporate 5; fp-font: Times New Roman, Times, serif; fp-font-style: Bold; fp-font-size: 18; fp-font-color-normal: #000080; fp-font-color-hover: #FFFFFF; fp-font-color-press: #0000FF" fp-title="Контакти" --></a></div>
+
+</body>
+
+</html>
